@@ -1,0 +1,152 @@
+body {
+    padding-top: 56px;
+    background-color: hsla(60, 4%, 18%, 1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+
+a {
+    color: black;
+}
+
+.card-color {
+    background-color: hsla(60, 3%, 85%, 1);
+}
+
+.nav-col {
+    background-color: hsla(60, 3%, 22%, 1);
+    font-size: 125%;
+}
+
+.carousel-item {
+    height: 65vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.portfolio-item {
+    margin-bottom: 30px;
+}
+
+.mainImage {
+    width: 99.5%;
+}
+
+.my-4,
+.mb-3 {
+    color: aliceblue;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 15px;
+    right: 0;
+    height: 100%;
+    width: 92%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: hsla(60, 3%, 65%, .75);
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+    border-bottom-right-radius: calc(.25rem - 1px);
+    border-bottom-left-radius: calc(.25rem - 1px);
+}
+
+.overlay-2 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 15px;
+    right: 0;
+    height: 100%;
+    width: 90%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: hsla(60, 3%, 65%, .75);
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+    border-bottom-right-radius: calc(.25rem - 1px);
+    border-bottom-left-radius: calc(.25rem - 1px);
+}
+
+.folio-overlay:hover .overlay {
+    opacity: 1;
+}
+
+.folio-overlay-2:hover .overlay-2 {
+    opacity: 1;
+}
+
+.text-color {
+    color: white;
+}
+
+.text {
+    color: white;
+    font-size: 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.social-media {
+    padding: 5px;
+}
+
+.text-color {
+    color: hsla(60, 0%, 60%, 1);
+}
+
+.text-color-2 {
+    color: hsla(60, 0%, 30%, 1);
+}
+
+.footer-logo {
+    align-content: center;
+}
+
+#facebook-icon {
+    border-radius: 8px;
+}
+
+#main-logo {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+}
+
+
+/*media queries*/
+
+@media only screen and (max-width: 600px) {
+    .p-image1 {
+        display: none;
+    }
+    .p-image2 {
+        display: block;
+    }
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 15px;
+        right: 0;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: hsla(60, 3%, 75%, .5);
+        border-top-left-radius: calc(.25rem - 1px);
+        border-top-right-radius: calc(.25rem - 1px);
+        border-bottom-right-radius: calc(.25rem - 1px);
+        border-bottom-left-radius: calc(.25rem - 1px);
+    }
+}
