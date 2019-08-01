@@ -115,6 +115,20 @@ a {
     align-content: center;
 }
 
+.gallery-scroll {
+    display: flex;
+    overflow-x: auto;
+}
+
+.scroll-gallery {
+    padding: 5px 5px 5px 0px;
+    width: 280px;
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+    border-bottom-right-radius: calc(.25rem - 1px);
+    border-bottom-left-radius: calc(.25rem - 1px);
+}
+
 #facebook-icon {
     border-radius: 8px;
 }
@@ -144,6 +158,14 @@ a {
         opacity: 0;
         transition: .5s ease;
         background-color: hsla(60, 3%, 75%, .5);
+        border-top-left-radius: calc(.25rem - 1px);
+        border-top-right-radius: calc(.25rem - 1px);
+        border-bottom-right-radius: calc(.25rem - 1px);
+        border-bottom-left-radius: calc(.25rem - 1px);
+    }
+    .scroll-gallery {
+        padding: 5px 5px 5px 0px;
+        width: 385px;
         border-top-left-radius: calc(.25rem - 1px);
         border-top-right-radius: calc(.25rem - 1px);
         border-bottom-right-radius: calc(.25rem - 1px);
