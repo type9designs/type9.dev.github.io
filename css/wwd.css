@@ -9,6 +9,11 @@ a {
     color: black;
 }
 
+ul {
+    display: inline-block;
+    text-align: left;
+}
+
 .card-color {
     background-color: hsla(60, 3%, 85%, 1);
 }
