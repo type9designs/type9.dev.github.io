@@ -138,10 +138,15 @@ ul {
     border-radius: 8px;
 }
 
-#main-logo {
+#main-banner {
     position: absolute;
-    top: 15%;
-    right: 2.5%;
+    top: 40%;
+    left: 20%;
+}
+
+#main-banner-text {
+    font-size: 450%;
+    color: aliceblue;
 }
 
 
