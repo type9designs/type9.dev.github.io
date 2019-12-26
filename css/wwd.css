@@ -4,7 +4,8 @@ html {
 
 body {
     padding-top: 56px;
-    background-color: hsla(60, 4%, 18%, 1);
+    background-color: hsla(60, 3%, 22%, 1);
+    ;
     font-family: 'Roboto Condensed', sans-serif;
     overflow-x: hidden;
 }
@@ -23,7 +24,7 @@ ul {
 }
 
 .nav-col {
-    background-color: hsla(60, 3%, 22%, 1);
+    background-color: hsla(60, 4%, 18%, 1);
     font-size: 125%;
 }
 
@@ -138,19 +139,37 @@ ul {
     border-bottom-left-radius: calc(.25rem - 1px);
 }
 
-#facebook-icon {
-    border-radius: 8px;
+#logo-link {
+    height: 150%;
 }
 
 #main-banner {
     position: absolute;
-    top: 40%;
-    left: 20%;
+    top: 35%;
+    left: 25%;
 }
 
 #main-banner-text {
-    font-size: 450%;
+    font-size: 350%;
     color: aliceblue;
+}
+
+#left-arrow {
+    padding-top: 7%;
+    padding-bottom: 7%;
+    padding-right: 5%;
+    z-index: 1;
+}
+
+#right-arrow {
+    padding-top: 7%;
+    padding-bottom: 7%;
+    padding-right: 5%;
+    z-index: 1;
+}
+
+#facebook-icon {
+    border-radius: 8px;
 }
 
 
