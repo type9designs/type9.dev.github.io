@@ -144,7 +144,9 @@ ul {
     color: aliceblue;
 }
 
-#left-arrow {
+.left-arrow {
+    height: 25%;
+    top: 35%;
     padding-top: 7%;
     padding-bottom: 7%;
     padding-right: 5%;
@@ -164,6 +166,26 @@ ul {
 
 .facebook-index {
     border-radius: 8px;
+}
+
+.swiper-container {}
+
+.swiper-slide {
+    text-align: center;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    object-fit: contain;
 }
 
 

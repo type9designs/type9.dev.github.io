@@ -15,11 +15,10 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/lightbox.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <!-- Custom styles for this template -->
     <link href="css/gallery.css" rel="stylesheet">
-    <link href="css/owl.carousel.css" rel="stylesheet">
-    <link href="css/owl.theme.default.css" rel="stylesheet">
     <link href="css/wwd.css" rel="stylesheet">
 
 </head>
@@ -98,8 +97,7 @@
             </div>
         </div>
         <br>
-        <hr>
-        <div class=" portfolio-item ">
+        <!--<div class=" portfolio-item ">
             <div class="gallery-scroll">
                 <a href="css/images/Project Management/pm1.jpg" data-lightbox="project-gallery"><img class=" gallery scroll-gallery" src="css/images/Project Management/pm1.jpg" alt="project-1"></a>
                 <a href="css/images/Project Management/pm2.jpg" data-lightbox="project-gallery"><img class=" gallery scroll-gallery" src="css/images/Project Management/pm2.jpg" alt="project-2"></a>
@@ -107,6 +105,20 @@
                 <a href="css/images/Project Management/pm4.jpg" data-lightbox="project-gallery"><img class=" gallery scroll-gallery" src="css/images/Project Management/pm4.jpg" alt="project-4"></a>
                 <a href="css/images/Project Management/pm5.jpg" data-lightbox="project-gallery"><img class=" gallery scroll-gallery" src="css/images/Project Management/pm5.jpg" alt="project-5"></a>
             </div>
+        </div>-->
+    </div>
+    <br>
+    <div class="container">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <a class="swiper-slide" href="css/images/Project Management/pm1.jpg" data-lightbox="project-gallery"><img class="scroll-gallery" src="css/images/Project Management/pm1.jpg" style="margin-right: 0px" ; alt="project-1"></a>
+                <a class="swiper-slide" href="css/images/Project Management/pm2.jpg" data-lightbox="project-gallery"><img class="scroll-gallery" src="css/images/Project Management/pm2.jpg" style="margin-right: 0px" ; alt="project-2"></a>
+                <a class="swiper-slide" href="css/images/Project Management/pm3.jpg" data-lightbox="project-gallery"><img class="scroll-gallery" src="css/images/Project Management/pm3.jpg" style="margin-right: 0px" ; alt="project-3"></a>
+                <a class="swiper-slide" href="css/images/Project Management/pm4.jpg" data-lightbox="project-gallery"><img class="scroll-gallery" src="css/images/Project Management/pm4.jpg" style="margin-right: 0px" ; alt="project-4"></a>
+                <a class="swiper-slide" href="css/images/Project Management/pm5.jpg" data-lightbox="project-gallery"><img class="scroll-gallery" src="css/images/Project Management/pm5.jpg" style="margin-right: 0px" alt="project-5"></a>
+            </div>
+            <div class="swiper-button-next" style="color:aliceblue;"></div>
+            <div class="swiper-button-prev" style="color:aliceblue;"></div>
         </div>
     </div>
     <br>
@@ -135,6 +147,10 @@
                 </center>
             </div>
         </div>
+        <br>
+        <br>
+
+
         <!-- /.container -->
     </footer>
 
@@ -142,7 +158,26 @@
     <script src="vendor/jquery/jquery.min.js "></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
     <script src="js/lightbox.min.js "></script>
-    <script src="js/owl.carousel.js "></script>
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            slidesPerGroup: 4,
+            loop: true,
+            loopFillGroupWithBlank: false,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
 </body>
 
 </html>
