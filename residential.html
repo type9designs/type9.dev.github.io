@@ -15,7 +15,8 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/lightbox.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <!-- Custom styles for this template -->
     <link href="css/gallery.css" rel="stylesheet">
     <link href="css/wwd.css" rel="stylesheet">
@@ -73,23 +74,11 @@
                 <div class="p-image1">
                     <center><img class="mainImage" src="css/images/res-page/1200x400.jpg" style="border-radius: 5px"></center>
                 </div>
-                <div class="col-lg-3 col-sm-6 portfolio-item p-image2" style="display: none;">
-                    <div class="card h-100">
-                        <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-                        <div class="card-body">
-                            <h4 class="card-title">
-                                <a href="#">Commercial</a>
-                            </h4>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </div>
 
         <!-- Portfolio Section -->
-        <br>
-        <br>
         <br>
         <br>
         <div class="row">
@@ -98,54 +87,78 @@
                     <div class="card-body">
                         <p class="card-text">Woodworks Design defines the modern craft of custom woodworking, utilizing modern equipment, the latest finishing techniques, rigorous material selection and detailed fabrication. Whether a project demands a custom closet, kitchen,
                             or complete millwork package for new construction, Woodworks Design seamlessly unites the art, science and service required to deliver an extraordinary product at a remarkable value.
-
                         </p>
                     </div>
                 </div>
             </div>
         </div>
-        <hr>
         <br>
-        <br>
-        <div class=" portfolio-item ">
-            <div class="gallery-scroll">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <a class="swiper-slide" href="css/images/res-page/residential 3.jpg" data-lightbox="residential-gallery"><img class=" gallery scroll-gallery" src="css/images/res-page/residential 3.jpg" style="margin-right: 5px" alt="residential-3"></a>
+                <a class="swiper-slide" href="css/images/res-page/residential 4.jpg" data-lightbox="residential-gallery"><img class=" gallery scroll-gallery" src="css/images/res-page/residential 4.jpg" style="margin-right: 5px" alt="residential-4"></a>
+                <a class="swiper-slide" href="css/images/res-page/residential 5.jpg" data-lightbox="residential-gallery"><img class=" gallery scroll-gallery" src="css/images/res-page/residential 5.jpg" style="margin-right: 5px" alt="residential-5"></a>
+                <a class="swiper-slide" href="css/images/res-page/residential 6.jpg" data-lightbox="residential-gallery"><img class=" gallery scroll-gallery" src="css/images/res-page/residential 6.jpg" style="margin-right: 5px" alt="residential-6"></a>
+                <a class="swiper-slide" href="css/images/res-page/residential 2.jpg" data-lightbox="residential-gallery"><img class=" gallery scroll-gallery" src="css/images/res-page/residential 2.jpg" style="margin-right: 5px, padding: right 5px;" alt="residential-1"></a>
+            </div>
+            <div class="swiper-button-next" style="color:aliceblue;"></div>
+            <div class="swiper-button-prev" style="color:aliceblue;"></div>
+        </div>
+    </div>
+    <br>
+    <br>
 
-                <a href="css/images/res-page/residential 3.jpg" data-lightbox="residential-gallery"><img class=" gallery scroll-gallery" src="css/images/res-page/residential 3.jpg" alt="residential-3"></a>
-                <a href="css/images/res-page/residential 4.jpg" data-lightbox="residential-gallery"><img class=" gallery scroll-gallery" src="css/images/res-page/residential 4.jpg" alt="residential-4"></a>
-                <a href="css/images/res-page/residential 5.jpg" data-lightbox="residential-gallery"><img class=" gallery scroll-gallery" src="css/images/res-page/residential 5.jpg" alt="residential-5"></a>
-                <a href="css/images/res-page/residential 6.jpg" data-lightbox="residential-gallery"><img class=" gallery scroll-gallery" src="css/images/res-page/residential 6.jpg" alt="residential-6"></a>
-                <a href="css/images/res-page/residential 2.jpg" data-lightbox="residential-gallery"><img class=" gallery scroll-gallery" src="css/images/res-page/residential 2.jpg" alt="residential-1"></a>
+    <!-- Footer -->
+    <footer class="py-5 nav-col ">
+        <div class="row ">
+            <div class="col-md-4 text-color ">
+                <center>
+                    <p class="m-0 ">Copyright &copy; Woodworks-Design</p>
+                </center>
+
+            </div>
+            <div class="col-md-4 ">
+                <center>
+                    <a href="index.html " class="footer-logo "><img src="css/images/wwd-logo-2.png "></a>
+                </center>
+
+            </div>
+            <div class="col-md-4 ">
+                <center>
+                    <a class="social-media " href="https://www.instagram.com/woodworks_design/ " target="_blank "><img src="css/images/instagram.png " alt="instagram "></a>
+                    <a class="social-media " href="https://www.facebook.com/woodworksdesign1990/ " target="_blank "><img id="facebook-icon " src="css/images/facebook-logo-remix.png " alt="facebook "></a>
+                    <a class="social-media " href="https://www.houzz.com/pro/woodworksdesign/woodworks-design-inc " target="_blank "><img src="css/images/houzz.png " alt="houzz "></a>
+                </center>
             </div>
         </div>
 
-        <!-- Footer -->
-        <footer class="py-5 nav-col">
-            <div class="row">
-                <div class="col-md-4 text-color">
-                    <center>
-                        <p class="m-0 ">Copyright &copy; Woodworks-Design</p>
-                    </center>
-                </div>
-                <div class="col-md-4">
-                    <center>
-                        <a href="index.html" class="footer-logo"><img src="css/images/wwd-logo-2.png"></a>
-                    </center>
-                </div>
-                <div class="col-md-4">
-                    <center>
-                        <a class="social-media" href="https://www.instagram.com/woodworks_design/" target="_blank"><img src="css/images/instagram.png" alt="instagram"></a>
-                        <a class="social-media" href="https://www.facebook.com/woodworksdesign1990/" target="_blank"><img id="facebook-icon" src="css/images/facebook-logo-remix.png" alt="facebook"></a>
-                        <a class="social-media" href="https://www.houzz.com/pro/woodworksdesign/woodworks-design-inc" target="_blank"><img src="css/images/houzz.png" alt="houzz"></a>
-                    </center>
-                </div>
-            </div>
-            <!-- /.container -->
-        </footer>
+        <!-- /.container -->
+    </footer>
 
-        <!-- Bootstrap core JavaScript -->
-        <script src="vendor/jquery/jquery.min.js"></script>
-        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="js/lightbox.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            slidesPerGroup: 4,
+            loop: true,
+            loopFillGroupWithBlank: false,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
 </body>
 
 </html>
