@@ -15,7 +15,8 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/lightbox.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <!-- Custom styles for this template -->
     <link href="css/gallery.css" rel="stylesheet">
     <link href="css/wwd.css" rel="stylesheet">
@@ -93,15 +94,16 @@
             </div>
         </div>
         <br>
-        <div class=" portfolio-item ">
-            <div class="gallery-scroll">
-
-                <a href="css/images/Custom Furniture/chandra1.jpg" data-lightbox="furniture-gallery"><img class=" gallery scroll-gallery" src="css/images/Custom Furniture/chandra1.jpg" alt="furniture-1"></a>
-                <a href="css/images/Custom Furniture/table.jpg" data-lightbox="furniture-gallery"><img class=" gallery scroll-gallery" src="css/images/Custom Furniture/table.jpg" alt="furniture-2"></a>
-                <a href="css/images/Custom Furniture/untitled-2-1.jpg" data-lightbox="furniture-gallery"><img class=" gallery scroll-gallery" src="css/images/Custom Furniture/untitled-2-1.jpg" alt="furniture-3"></a>
-                <a href="css/images/Custom Furniture/untitled-2-recovered.jpg" data-lightbox="furniture-gallery"><img class=" gallery scroll-gallery" src="css/images/Custom Furniture/untitled-2-recovered.jpg" alt="furniture-4"></a>
-                <a href="css/images/Custom Furniture/untitled-2-recovered2.jpg" data-lightbox="furniture-gallery"><img class=" gallery scroll-gallery" src="css/images/Custom Furniture/untitled-2-recovered2.jpg" alt="furniture-5"></a>
+        <div class=" swiper-container ">
+            <div class="swiper-wrapper">
+                <a class="swiper-slide" href="css/images/Custom Furniture/chandra1.jpg" data-lightbox="furniture-gallery"><img class=" scroll-gallery" src="css/images/Custom Furniture/chandra1.jpg" style="margin-right: 0px" alt="furniture-1"></a>
+                <a class="swiper-slide" href="css/images/Custom Furniture/table.jpg" data-lightbox="furniture-gallery"><img class="scroll-gallery" src="css/images/Custom Furniture/table.jpg" style="margin-right: 0px" alt="furniture-2"></a>
+                <a class="swiper-slide" href="css/images/Custom Furniture/untitled-2-1.jpg" data-lightbox="furniture-gallery"><img class=" scroll-gallery" src="css/images/Custom Furniture/untitled-2-1.jpg" style="margin-right: 0px" alt="furniture-3"></a>
+                <a class="swiper-slide" href="css/images/Custom Furniture/untitled-2-recovered.jpg" data-lightbox="furniture-gallery"><img class=" scroll-gallery" src="css/images/Custom Furniture/untitled-2-recovered.jpg" style="margin-right: 0px" alt="furniture-4"></a>
+                <a class="swiper-slide" href="css/images/Custom Furniture/untitled-2-recovered2.jpg" data-lightbox="furniture-gallery"><img class=" scroll-gallery" src="css/images/Custom Furniture/untitled-2-recovered2.jpg" style="margin-right: 0px" alt="furniture-5"></a>
             </div>
+            <div class="swiper-button-next" style="color:aliceblue;"></div>
+            <div class="swiper-button-prev" style="color:aliceblue;"></div>
         </div>
     </div>
     <br>
@@ -137,6 +139,26 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="js/lightbox.min.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            slidesPerGroup: 4,
+            loop: true,
+            loopFillGroupWithBlank: false,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
 </body>
 
 </html>
