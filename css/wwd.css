@@ -19,6 +19,10 @@ ul {
     text-align: left;
 }
 
+img {
+    border-radius: 7px;
+}
+
 .card-color {
     background-color: hsla(60, 3%, 85%, 1);
 }
@@ -120,15 +124,6 @@ ul {
     overflow-x: auto;
 }
 
-.scroll-gallery {
-    padding: 5px 5px 5px 0px;
-    width: 280px;
-    border-top-left-radius: calc(.25rem - 1px);
-    border-top-right-radius: calc(.25rem - 1px);
-    border-bottom-right-radius: calc(.25rem - 1px);
-    border-bottom-left-radius: calc(.25rem - 1px);
-}
-
 #logo-link {
     height: 150%;
 }
@@ -168,8 +163,6 @@ ul {
     border-radius: 8px;
 }
 
-.swiper-container {}
-
 .swiper-slide {
     text-align: center;
     /* Center slide text vertically */
@@ -187,6 +180,14 @@ ul {
     align-items: center;
     object-fit: contain;
 }
+
+.scroll-gallery {
+    padding: 5px 5px 5px 5px;
+    width: 280px;
+    /*border-radius: 7px;*/
+}
+
+#left-button {}
 
 
 /*media queries*/
