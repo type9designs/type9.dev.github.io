@@ -191,10 +191,14 @@ img {
     display: none;
 }
 
+.text-query {
+    display: none;
+}
+
 
 /*media queries*/
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     #res-scroll {
         display: none;
     }
@@ -224,9 +228,13 @@ img {
     .scroll-gallery {
         padding: 5px 5px 5px 0px;
         height: 200px;
+        width: 200px;
         border-top-left-radius: calc(.25rem - 1px);
         border-top-right-radius: calc(.25rem - 1px);
         border-bottom-right-radius: calc(.25rem - 1px);
         border-bottom-left-radius: calc(.25rem - 1px);
+    }
+    .text-query {
+        display: block;
     }
 }
