@@ -187,12 +187,20 @@ img {
     /*border-radius: 7px;*/
 }
 
-#left-button {}
+#res-scroll-min {
+    display: none;
+}
 
 
 /*media queries*/
 
 @media only screen and (max-width: 600px) {
+    #res-scroll {
+        display: none;
+    }
+    #res-scroll-min {
+        display: block;
+    }
     .p-image1 {
         display: none;
     }
@@ -215,7 +223,7 @@ img {
     }
     .scroll-gallery {
         padding: 5px 5px 5px 0px;
-        width: 385px;
+        height: 200px;
         border-top-left-radius: calc(.25rem - 1px);
         border-top-right-radius: calc(.25rem - 1px);
         border-bottom-right-radius: calc(.25rem - 1px);

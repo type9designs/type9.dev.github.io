@@ -28,6 +28,9 @@
     <!-- Navigation -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark nav-col fixed-top">
         <div class="container">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="index.html"><img src="css/images/wwd-logo-2.png "></a>
@@ -93,14 +96,27 @@
             </div>
         </div>
         <br>
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <a class="swiper-slide" href="css/images/res-page/residential 5.jpg" data-lightbox="residential-gallery"><img class=" gallery scroll-gallery" src="css/images/res-page/residential 5.jpg" style="margin-right: 5px" alt="residential-5"></a>
-                <a class="swiper-slide" href="css/images/res-page/residential 6.jpg" data-lightbox="residential-gallery"><img class=" gallery scroll-gallery" src="css/images/res-page/residential 6.jpg" style="margin-right: 5px" alt="residential-6"></a>
-                <a class="swiper-slide" href="css/images/res-page/residential 2.jpg" data-lightbox="residential-gallery"><img class=" gallery scroll-gallery" src="css/images/res-page/residential 2.jpg" style="margin-right: 5px" alt="residential-1"></a>
+        <div id="res-scroll">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <a class="swiper-slide" href="css/images/res-page/residential 5.jpg" data-lightbox="residential-gallery"><img class=" gallery scroll-gallery" src="css/images/res-page/residential 5.jpg" style="margin-right: 5px" alt="residential-5"></a>
+                    <a class="swiper-slide" href="css/images/res-page/residential 6.jpg" data-lightbox="residential-gallery"><img class=" gallery scroll-gallery" src="css/images/res-page/residential 6.jpg" style="margin-right: 5px" alt="residential-6"></a>
+                    <a class="swiper-slide" href="css/images/res-page/residential 2.jpg" data-lightbox="residential-gallery"><img class=" gallery scroll-gallery" src="css/images/res-page/residential 2.jpg" style="margin-right: 5px" alt="residential-1"></a>
+                </div>
+                <div id="left-button" class="swiper-button-next" style="color:aliceblue;"></div>
+                <div class="swiper-button-prev" style="color:aliceblue;"></div>
             </div>
-            <div id="left-button" class="swiper-button-next" style="color:aliceblue;"></div>
-            <div class="swiper-button-prev" style="color:aliceblue;"></div>
+        </div>
+        <div id="res-scroll-min">
+            <div class=" portfolio-item ">
+                <div class="gallery-scroll">
+                    <a href="css/images/res-page/residential 3.jpg" data-lightbox="residential-gallery"><img class=" gallery scroll-gallery" src="css/images/res-page/residential 3.jpg" alt="residential-3"></a>
+                    <a href="css/images/res-page/residential 4.jpg" data-lightbox="residential-gallery"><img class=" gallery scroll-gallery" src="css/images/res-page/residential 4.jpg" alt="residential-4"></a>
+                    <a href="css/images/res-page/residential 5.jpg" data-lightbox="residential-gallery"><img class=" gallery scroll-gallery" src="css/images/res-page/residential 5.jpg" alt="residential-5"></a>
+                    <a href="css/images/res-page/residential 6.jpg" data-lightbox="residential-gallery"><img class=" gallery scroll-gallery" src="css/images/res-page/residential 6.jpg" alt="residential-6"></a>
+                    <a href="css/images/res-page/residential 2.jpg" data-lightbox="residential-gallery"><img class=" gallery scroll-gallery" src="css/images/res-page/residential 2.jpg" alt="residential-1"></a>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -144,6 +160,7 @@
             spaceBetween: 30,
             slidesPerGroup: 4,
             loop: true,
+            calculateHeight: true,
             loopFillGroupWithBlank: false,
             pagination: {
                 el: '.swiper-pagination',
