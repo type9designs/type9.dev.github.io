@@ -195,6 +195,14 @@ img {
     display: none;
 }
 
+#main-banner-2 {
+    display: none;
+}
+
+#main-banner-text-2 {
+    display: none;
+}
+
 
 /*media queries*/
 
@@ -236,5 +244,14 @@ img {
     }
     .text-query {
         display: block;
+    }
+    #main-banner-2 {
+        display: block;
+    }
+    #main-banner-text-2 {
+        display: inline-block;
+        color: hsla(60, 0%, 60%, 1);
+        font-size: 200%;
+        padding-left: 22%;
     }
 }
