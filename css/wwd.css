@@ -252,8 +252,8 @@ img {
     #main-banner-text-2 {
         display: inline-block;
         color: hsla(60, 0%, 60%, 1);
-        font-size: 200%;
-        padding-left: 22%;
+        font-size: 100%;
+        text-align: center;
     }
     .grayout {
         filter: grayscale(75%);
