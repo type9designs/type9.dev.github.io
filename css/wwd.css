@@ -259,4 +259,8 @@ img {
         /*filter: grayscale(75%);*/
         opacity: 0.5;
     }
+    .footer-logo {
+        align-content: center;
+        margin-bottom: 20px;
+    }
 }
