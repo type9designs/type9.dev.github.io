@@ -244,6 +244,7 @@ img {
     }
     .text-query {
         display: block;
+        color: aliceblue;
     }
     #main-banner-2 {
         display: block;
@@ -253,5 +254,8 @@ img {
         color: hsla(60, 0%, 60%, 1);
         font-size: 200%;
         padding-left: 22%;
+    }
+    .grayout {
+        filter: grayscale(75%);
     }
 }
