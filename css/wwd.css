@@ -124,6 +124,11 @@ img {
     overflow-x: auto;
 }
 
+.min-scroll-pad {
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
 #logo-link {
     height: 150%;
 }
