@@ -13,10 +13,12 @@
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!--Lightbox core-->
     <link href="css/lightbox.min.css" rel="stylesheet">
+    <!--Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <!--Swiper carousel-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <!-- Custom styles for this template -->
     <link href="css/gallery.css" rel="stylesheet">
     <link href="css/wwd.css" rel="stylesheet">
@@ -152,17 +154,19 @@
         </footer>
 
         <!-- Bootstrap core JavaScript -->
-        <script src="vendor/jquery/jquery.min.js"></script>
-        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="js/lightbox.min.js"></script>
-        <script src="https://unpkg.com/swiper/js/swiper.js"></script>
-        <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+        <script src="vendor/jquery/jquery.min.js "></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
+        <!--Lightbox core js-->
+        <script src="js/lightbox.min.js "></script>
+        <!--Swiper core js-->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
         <!-- Initialize Swiper -->
         <script>
             var swiper = new Swiper('.swiper-container', {
-                slidesPerView: 4,
+                slidesPerView: 3,
                 spaceBetween: 30,
-                slidesPerGroup: 4,
+                slidesPerGroup: 3,
                 loop: false,
                 loopFillGroupWithBlank: false,
                 pagination: {
@@ -173,6 +177,7 @@
                     nextEl: '.swiper-button-next',
                     prevEl: '.swiper-button-prev',
                 },
+
             });
         </script>
 </body>
