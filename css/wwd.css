@@ -119,6 +119,12 @@ img {
     align-content: center;
 }
 
+.bottomFix {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
 .gallery-scroll {
     display: flex;
     overflow-x: auto;
